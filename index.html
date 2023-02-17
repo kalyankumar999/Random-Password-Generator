@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container{
+      background-image: url("home.jpg");
+      height: 450px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+    }
+    .buttons{
+      margin-top: 200px;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .gen{
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    .genbtn{
+      background-color: rgb(162, 4, 143);
+      cursor: pointer;
+      border-radius: 5px;
+      height: 40px;
+      font-weight: bold;
+    }
+
+    .head{
+      padding-top: 40px;
+      text-align: center;
+      color: rgb(234, 68, 8);
+      font-family:  Roboto;
+    }
+
+    .info{
+      color: rgb(238, 238, 124);
+      font-family:sans-serif;
+    }
+
+    .genbtn:hover{
+      background-color: aliceblue;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="head">
+      <h1>Random Password Generator</h1>
+       <h3 class="info">Click on Generate To Generate Your Password</h3>
+     <form action="homepage.html" class="gen">
+      <button class="genbtn">Generate</button>
+     </form>
+  </div>
+
+  <script>
+ ;
+//  const contact=document.getElementById("cnct");
+//  const login=document.getElementById("lgn");
+ const about=document.getElementById("abt");
+ function about(){
+  let dis=document.getElementById("abtclk");
+  if (dis.style.display == "none") {
+    dis.style.display = "block";
+      console.log("1")
+    } else {
+      console.log("2")
+      dis.style.display = "none";
+    }
+ }
+
+
+  </script>
+
+</body>
+</html>

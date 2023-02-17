@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="heading">
+            <div class="img-div">
+                <img id="menue" class="menue" src="bars-solid.svg" onclick="burgerMenue()">
+                <form class="bars" id="bars" style="display : none" action="index.html">
+                    <div class="btn-list">
+                        <button>
+                            <i id="logo" class="fa fa-cog" aria-hidden="true"></i>setting</button>  
+                    </div>
+                    <div class="btn-list">
+                        <button><i id="logo" class="fa fa-home" aria-hidden="true" onclick="location.href='index.html'" ></i>home</button>
+                    </div>
+                    <div class="btn-list">
+                        <button><i id="logo" class="fa fa-sign-in" aria-hidden="true" ></i>sign in</button>
+                    </div>
+    
+                </form>
+            </div>
+          
+            <div class="title">
+                <p class="matter">Welcome To Password Generator</p>
+            </div>
+            <div class="homebtn">
+             
+                <i  
+                class="fa fa-home" 
+                aria-hidden="true" 
+                onclick="location.href='index.html'"  
+                style="background: none;
+                padding-right: 10px;
+                cursor: pointer;"></i>
+               
+            </div>
+            
+        </div>
+        <div class="content">
+            <h3 style="color: orange;">Enter the count number in each input box to get password</h3>
+            <form class="form" id="form" method="get" name="form" action="password.html" >
+
+            <div class="special">
+                <label for="">Special Char : </label>
+                
+                <input class="set" id="special" autocomplete="off" type="text" name="special-char"  placeholder="Enter  ">
+            </div>
+
+            <div class="number">
+                <label for="">Numeric : </label>
+                
+                <input class="set" id="numeric" autocomplete="off" type="text" name="number"  placeholder="Enter ">
+
+            </div>
+
+            <div class="alphabates">
+                <label for="">Alphabates : </label>
+               
+                <input class="set" id="alphabates" autocomplete="off" type="text" name="alphabates"  placeholder="Enter ">
+
+            </div>
+            <div class="ambigious">
+                <label for="">Ambigious Char : </label>
+               
+                <input class="set" id="ambigious" autocomplete="off" type="text" name="ambigious"  placeholder="Enter ">
+
+            </div>
+            <div class="uppercase">
+                <label for="">UpperCase Latters : </label>
+               
+                <input class="set" id="uppercase" autocomplete="off" type="text" name="uppercase"  placeholder="Enter ">
+
+            </div>
+
+            <button type="submit" class="submit" onclick="location.href='password.html'" >Submit</button>
+            
+
+        </form>
+        </div>
+        
+    </div>
+<script src="password.js">
+
+</script>
+
+
+
+
+</body>
+
+</html>
+
